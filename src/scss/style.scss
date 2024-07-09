@@ -1,0 +1,31 @@
+$screen-sm:                   320px;
+$screen-md:                   768px;
+$screen-lg:                   1440px;
+
+
+$bgColor: #F8F8F8;
+$text: #1B1C21;  
+$text-grey: #7E7E82;
+$lnkclr:#B8FFEC;
+$bgClrModal: #FFFFFF; 
+
+
+
+@import 'src/scss/normalize.scss';
+
+@import 'src/scss/_body.scss','src/scss/footer.scss';
+@import 'src/scss/_header.scss';
+@import 'src/scss/_header-list-right.scss';
+@import 'src/scss/_header-list-left.scss';
+@import 'src/scss/_round-icon.scss','src/scss/show-more.scss';
+
+@import 'src/scss/_main-title.scss', 'src/scss/_main-title-left.scss', 'src/scss/_main-title-right.scss';
+
+@import 'src/scss/_nav-list.scss', 'src/scss/_link-btn-brd.scss';
+
+@import 'src/scss/_left-nav.scss';
+
+@import 'src/scss/_service-brand.scss', 'src/scss/_service-category.scss','src/scss/_service-price.scss';
+
+@import 'src/scss/information.scss';
+@import 'src/scss/modal-call.scss', 'src/scss/modal-feedback.scss';

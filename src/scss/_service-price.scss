@@ -1,0 +1,140 @@
+.service-price{
+  
+
+  p {
+    display: block;    
+    padding-left: 20px;
+  }
+
+  a{
+    padding:20px;
+    display: inline-block;
+    padding-right: 24px;
+    padding-left: 15px;
+    font-weight: 600;
+    background-image: url(../ic/more.png);
+    background-repeat: no-repeat;
+    background-position: right;   
+  }
+
+  .price-items{
+    width: 260px;
+    height: 200px;   
+    display: grid;
+    padding: 16px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    border: 1px solid black;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:"serv-cat serv-cat serv-cat"
+                        "serv-cat-item serv-cat-item serv-cat-item"
+                        "price price price"
+                        "price-item price-item price-item" 
+                        "time price-lnk price-lnk"
+                        "time-item price-lnk price-lnk";
+}
+  .price-list{
+    font-size: 14px;
+    padding: 20px;
+    width: 100%;
+    border-radius: 6px;
+
+  }
+
+
+.price-desc{
+    display: none;
+}
+
+.serv-cat{  
+  grid-area: serv-cat;
+  color: $text-grey; 
+}
+
+.price {
+    grid-area: price;
+    color: $text-grey;
+}
+
+.time {
+    grid-area: time;
+    color: $text-grey;
+}
+
+.serv-cat-item{
+    grid-area: serv-cat-item;
+    align-self: center;
+}
+
+.price-item{
+    grid-area: price-item;
+    align-self: center;
+}
+
+.time-item{
+    grid-area: time-item;
+    align-self: center;
+    white-space: nowrap;
+}
+
+.price-lnk{    
+    grid-area: price-lnk;
+    align-self: self-end;
+    justify-self: end;
+    height: 32px;
+    a {padding:0;
+    background-image: url(../ic/order.png);
+    width: 120px;
+    height: 32px;
+    
+    
+    }  
+}
+
+
+
+@media (min-width: $screen-md) {
+
+ .price-desc{
+    width: auto;
+    padding: 14px;
+    display: grid;    
+    grid-template-columns: 3fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    grid-template-areas: "serv-cat price time";                        
+                        
+}
+
+
+.price-items{
+    width: auto;    
+    height: auto;  
+    display: grid;
+    align-content: center;
+    grid-template-columns: 3fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;    
+    grid-template-areas: 
+                        "serv-cat-item price-item time-item price-lnk ";                        
+                        
+    .serv-cat,.price, .time {
+      display: none;}
+}
+
+
+.serv-cat{
+    grid-area: serv-cat;
+}
+
+.price {
+    grid-area: price;
+}
+
+.time {
+    grid-area: time;
+}
+.price-lnk{ 
+  align-self: self-end; 
+}
+}
+}

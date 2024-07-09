@@ -1,0 +1,21 @@
+body {
+  display: grid;
+  grid-template-columns: 320px 1fr ;
+  grid-template-rows: 2fr  1fr 1fr;
+  grid-template-areas:  "left-nav main"
+                        "modal-call main"
+                        "modal-feedback main";
+  min-width: 320px;
+  padding: 0;
+  margin: 0;
+  font-family: TTLakes, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  background-color: $bgColor;
+  color: $text;
+}
+
+.main{
+  grid-area: main;
+}

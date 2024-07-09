@@ -1,0 +1,32 @@
+.header-list-right{
+  display: flex;
+  justify-content: flex-end;
+  gap:18px; 
+  align-items: center;  
+  padding: 0 ; 
+  list-style-type: none;    
+  background-repeat: no-repeat;
+  
+  .round-icon_call, .round-icon_chat, .round-icon_profile  {      
+    display:none; 
+  }
+ 
+  @media (min-width: $screen-md) {
+    .round-icon_call,.round-icon_chat, .round-icon_profile  {      
+      display:block; 
+  }
+  }
+
+
+  .divider {
+    display: block;
+    width: 2px;
+    height: 32px;
+    background-image: url(../ic/divider.png); 
+  }
+  
+}
+
+
+
+

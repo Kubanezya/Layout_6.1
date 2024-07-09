@@ -1,0 +1,69 @@
+.modal-call{
+  grid-area: modal-call;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  width: 320px;
+  padding:16px;
+  background-color: $bgClrModal;
+  
+  
+  .round-icon_close{
+    display: block;
+    }
+
+  .lnk-in-text{
+    color: #FF3E79;
+  }
+
+  .btn-send{
+    width: 136px;
+    height: 32px;
+    padding: 0 ;
+    background-image: url(../ic/send.png);
+    align-self: end;
+  }
+  
+  .inp_telephone{
+    min-height: 48px; 
+  }
+
+  input::placeholder {
+    padding: 12px;
+  }
+
+}
+
+
+.modal-title{
+  display: flex;
+  margin-left: -16px;
+  align-items: center;
+  h3 {
+    padding-left: 14px;
+  } 
+}
+
+@media (min-width: $screen-md) {
+
+  .modal-call{
+   
+    width: 320px;
+    
+    
+    
+    /*.modal-call::after{
+      content: "";
+      display: block;
+      width: 320px;
+      height: 120px;
+      border: 1px solid red;
+      
+  */
+    
+  
+
+  }
+
+ 
+}

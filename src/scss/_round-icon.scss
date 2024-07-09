@@ -1,0 +1,56 @@
+.round-icon {
+  display: block;
+  border-radius: 50%;    
+  width: 40px;
+  height: 40px;
+  transform:scale(1);
+  transition: transform 500ms;
+  background-repeat: no-repeat;   
+
+}
+
+.round-icon:hover, .round_icon:focus {
+  transform:scale(1.2);
+  transition: transform 500ms;
+}
+
+.round-icon_burger {      
+  background-image: url(../ic/burger.png); 
+}
+
+
+.round-icon_repair {      
+  background-image: url(../ic/repair.png); 
+}
+
+.round-icon_checkstatus{
+  background-image: url(../ic/checkstatus.png);
+  margin-left:auto;
+}
+
+.round-icon_call {     
+  background-image: url(../ic/call.png); 
+}
+  
+.round-icon_chat {      
+  background-image: url(../ic/chat.png); 
+}
+  
+.round-icon_profile {      
+  background-image: url(../ic/profile.png); 
+}
+
+.round-icon_close {      
+  background-image: url(../ic/close.png); 
+}
+
+
+.group {
+  background-image: url(../ic/group.png); 
+  width: 98px;
+  height: 52px; 
+}
+
+
+
+

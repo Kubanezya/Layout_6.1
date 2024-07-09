@@ -1,0 +1,37 @@
+.main-title-right{
+  display: none;
+}
+
+
+@media (min-width: $screen-lg){
+
+.main-title-right{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-title-right__btn {
+  display: inline-block;
+  margin-right: 20px;
+  background-color: $bgColor;
+  font-weight: 400;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-left: auto;
+  border:none;
+  text-align: left;
+  height: 40px;
+  width: 168px;
+  padding: 0;
+}  
+
+.main-title__btn_repair {
+  background-image: url(../ic/repair.png);
+}
+
+.main-title__btn_checkstatus {
+  background-image: url(../ic/checkstatus.png);
+}
+}
+

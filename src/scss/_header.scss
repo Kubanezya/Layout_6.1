@@ -1,0 +1,12 @@
+.header{
+  display: flex;
+  padding:18px;
+  justify-content: space-between;
+}
+
+@media (min-width: $screen-lg){
+  .header{
+    display: none;
+  }
+
+}

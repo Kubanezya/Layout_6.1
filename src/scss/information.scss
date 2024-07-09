@@ -1,0 +1,58 @@
+.information{
+   
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding-bottom: 0;
+    background-color: $bgColor;
+    overflow: hidden;
+
+  .information__item{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding: 16px;
+  }
+  
+  .info__text{ 
+      max-height: 22vw;
+      height: auto; 
+      overflow: hidden;
+      line-height: 18px;
+      letter-spacing: 0.2px;
+      font-size: 14px;
+  }
+
+  .btn-more {
+    display: block;
+    border:0;
+    height: 24px;
+    background-color:#F8F8F8; 
+    font-weight: bold;   
+}
+  .main_logo{
+    border-radius: 5px;
+    max-width:40vw;
+    height: auto; 
+  }
+}
+@media (min-width: $screen-md){
+  .information{
+    flex-wrap: nowrap;
+    gap:42px; 
+    padding: 20px;
+
+    .information__item{
+      margin: 0;
+      padding: 0;  
+    } 
+
+    .info__text{   
+      max-height: 22vw;
+      overflow: hidden;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.service-brand {
+ 
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  
+ 
+  
+  .service-title{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, #F8F8F8, #FFFFFF);
+    border-top: 1px solid #D9FFF5;
+    height: 56px;
+    text-transform: uppercase;   
+  }
+  
+  .service-title__item{
+    font-size: 16px;
+    padding-left: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #7E7E82;     
+  }
+  
+  .service-nav{
+    display: flex; 
+    flex-direction: row; 
+    gap: 24px;
+    flex-wrap: nowrap;
+    padding: 32px 20px;
+    padding-right: 0;
+    
+  }
+  
+  .swiper-slide{
+    display: block;
+    width: 240px;   
+    height: 72px; 
+  }
+  
+  .swiper-brand{
+    height: 210px;
+    padding-bottom: 0;   
+   
+   
+  }
+  
+  
+
+
+
+}
+
+@media (min-width: $screen-md) {
+
+  .service-brand {
+    .service-nav{   
+      flex-wrap: wrap;    
+    }
+  }
+}

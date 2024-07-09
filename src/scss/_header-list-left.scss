@@ -1,0 +1,24 @@
+.header-list-left{
+  display: flex;
+  justify-content: flex-start;
+  gap:18px; 
+  align-items: center;  
+  padding: 0 ; 
+  list-style-type: none;    
+  background-repeat: no-repeat; 
+}
+
+.divider{
+  display: none;
+}
+
+
+
+@media (min-width: $screen-md) {
+.divider {
+  display: block;
+  width: 2px;
+  height: 32px;
+  background-image: url(../ic/divider.png); 
+}
+}
