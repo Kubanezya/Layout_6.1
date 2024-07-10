@@ -334,7 +334,15 @@ body {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.2px;
-  color: #1B1C21; }
+  font-weight: bold;
+  background-color: #F8F8F8;
+  color: #1B1C21;
+  border-radius: 3px; }
+
+.btn-more:hover, .link-btn-brd:focus {
+  color: #7E7E82;
+  background-image: unset;
+  border: 2px solid #B8FFEC; }
 
 .main-title {
   display: flex;
@@ -378,14 +386,20 @@ body {
     background-position: right;
     margin-left: auto;
     border: none;
+    border-radius: 6px;
     text-align: left;
     height: 40px;
-    width: 168px;
-    padding: 0; }
+    width: 172px;
+    padding: 0;
+    padding-left: 5px; }
   .main-title__btn_repair {
     background-image: url(./static/repair.png); }
   .main-title__btn_checkstatus {
     background-image: url(./static/checkstatus.png); } }
+
+.main-title-right__btn:hover, .main-title-right__btn:focus {
+  box-shadow: 0px 0px 1px 2px #B8FFEC;
+  transition: 200ms; }
 
 .nav-list {
   display: flex;
@@ -408,13 +422,19 @@ body {
   border: 2px solid #B8FFEC; }
 
 .left-nav {
+  display: none;
   background-color: #FFFFFF;
   grid-area: left-nav;
   width: 100%;
+  max-width: 767px;
   z-index: 2;
   position: fixed;
   left: 0;
   top: 0; }
+
+@media (min-width: 768px) {
+  .left-nav {
+    display: none; } }
 
 @media (min-width: 1440px) {
   .left-nav {
@@ -422,7 +442,13 @@ body {
     flex-direction: column;
     width: 320px;
     flex-shrink: 0;
-    border: 1px solid red; } }
+    position: static; }
+    .left-nav .modal-content {
+      box-shadow: unset; }
+    .left-nav .modal-ghost {
+      display: none; }
+    .left-nav .round-icon_close {
+      display: none; } }
 
 .header-left {
   display: flex;
@@ -592,7 +618,6 @@ body {
   padding: 16px;
   background-color: #FFFFFF;
   border-radius: 6px;
-  border: 1px solid black;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "serv-cat serv-cat serv-cat" "serv-cat-item serv-cat-item serv-cat-item" "price price price" "price-item price-item price-item"  "time price-lnk price-lnk" "time-item price-lnk price-lnk"; }
@@ -642,6 +667,10 @@ body {
     width: 120px;
     height: 32px; }
 
+.service-price .price-lnk:hover, .service-price .price-lnk:focus {
+  transform: scale(1.1);
+  transition: transform 600ms; }
+
 @media (min-width: 768px) {
   .service-price .price-desc {
     width: auto;
@@ -687,15 +716,9 @@ body {
     line-height: 18px;
     letter-spacing: 0.2px;
     font-size: 14px; }
-  .information .btn-more {
-    display: block;
-    border: 0;
-    height: 24px;
-    background-color: #F8F8F8;
-    font-weight: bold; }
   .information .main_logo {
     border-radius: 5px;
-    max-width: 40vw;
+    max-width: 100%;
     height: auto; }
 
 @media (min-width: 768px) {
@@ -709,7 +732,9 @@ body {
     .information .information__item_text {
       font-size: 14px;
       line-height: 20px;
-      letter-spacing: 0.2px; } }
+      letter-spacing: 0.2px; }
+    .information .main_logo {
+      max-width: 40vw; } }
 
 .modal-content {
   display: flex;
