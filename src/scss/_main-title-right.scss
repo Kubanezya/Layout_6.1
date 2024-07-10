@@ -19,11 +19,13 @@
   background-repeat: no-repeat;
   background-position: right;
   margin-left: auto;
-  border:none;
+  border:none;  
+  border-radius: 6px;
   text-align: left;
   height: 40px;
-  width: 168px;
+  width: 172px;
   padding: 0;
+  padding-left: 5px;
 }  
 
 .main-title__btn_repair {
@@ -35,3 +37,9 @@
 }
 }
 
+.main-title-right__btn:hover, .main-title-right__btn:focus {
+  box-shadow: 0px 0px 1px 2px $lnkclr;
+  transition: 200ms;
+
+  
+} 

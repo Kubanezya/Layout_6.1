@@ -16,27 +16,17 @@
     
   }
   
-  .information__item_text{ 
-      
-      height: 150px;     
-      overflow: hidden;
-      line-height: 18px;
-      letter-spacing: 0.2px;
-      font-size: 14px;
-      
-      
+  .information__item_text{       
+    height: 150px;     
+    overflow: hidden;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    font-size: 14px;        
   }
 
-  .btn-more {
-    display: block;
-    border:0;
-    height: 24px;
-    background-color:#F8F8F8; 
-    font-weight: bold;   
-}
   .main_logo{
     border-radius: 5px;
-    max-width:40vw;
+    max-width:100%;
     height: auto; 
   }
 }
@@ -58,6 +48,10 @@
       line-height: 20px;
       letter-spacing: 0.2px;
       
+    }
+
+    .main_logo{      
+      max-width:40vw;      
     }
   }
 }

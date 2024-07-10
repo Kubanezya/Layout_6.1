@@ -25,6 +25,15 @@
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.2px;
-  color: #1B1C21;
+  font-weight: bold;
+  background-color:$bgColor; 
+  color: $text;  
+  border-radius: 3px; 
   
 }
+
+.btn-more:hover, .link-btn-brd:focus {
+  color: #7E7E82;
+  background-image: unset;
+  border: 2px solid $lnkclr;
+} 
