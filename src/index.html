@@ -7,7 +7,7 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" media="screen and (max-width: 767px)" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
     <title>The final fight</title>
   </head>
     <body>
@@ -19,8 +19,8 @@
                 <li><a class="group" href="index.html"><img src="src/ic/group.png"></a></li>
             </ul>
             <div class="header-list-right">    
-                <a class="round-icon round-icon_call" href=""></a>
-                <a class="round-icon round-icon_chat" href=""></a>
+                <button class="round-icon round-icon_call" ></button>
+                <button class="round-icon round-icon_chat" ></button>
                 <button class="round-icon round-icon_profile" type="button"></button>
                 <span class="divider"></span> 
                 <a class="round-icon round-icon_repair" href=""></a>
@@ -55,7 +55,7 @@
                 <div class="content">
                     <article class="information">
                             <div class="information__item">
-                                <div class="info-text"> 
+                                <div class="information__item_text"> 
                                     <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell.Только у нас вы можете 
                                     отремонтировать свой ноутбук Dell с официальной гарантией производителя. </p>           
                                     <p>Мы успешно работаем с 1992 года и заслужили репутaцию надежного партнера, что подтверждает большое
@@ -227,7 +227,7 @@
 
         <aside class="left-nav">
 
-            <header class="header-left"> 
+            <header class="header-left "> 
                 <ul class="header-list-left">
                     <li><button class="round-icon round-icon_close" type="button"></button></li>
                     <li><a class="group" href="index.html"><img src="src/ic/group.png"></a></li>
@@ -253,8 +253,8 @@
     
             <footer class="footer-side">
                 <ul class="footer-side-nav">
-                    <li><a class="round-icon round-icon_call" href=""></a></li>
-                    <li><a class="round-icon round-icon_chat" href=""></a></li>
+                    <li><button class="round-icon round-icon_call" type="button"></button></li>
+                    <li><button class="round-icon round-icon_chat" type="button"></button></li>
                     <li><button class="round-icon round-icon_profile" type="button"></button></li>
                 </ul>
                 <div class="contacts">
@@ -269,8 +269,9 @@
             </footer>
         </aside>
 
-        <aside class="modal-call">
-            
+        <aside class="modal-call modal-call-hidden">
+            <div class="modal-ghost btn-cls"></div>
+            <div class="modal-content">
             <button class="btn-cls round-icon round-icon_close" type="button"></button>
             <div class="modal-title">
                 <span class="highlight"></span>
@@ -279,13 +280,15 @@
             <input class="inp_telephone" type="tel" placeholder="Телефон">
             <span>Нажимая “отправить”, вы даете согласие на<a class="lnk-in-text"> обработку персональных данных</a>
                 и соглашаетесь c нашей <a class="lnk-in-text" href="">политикой конфиденциальности<a></span>
-            <button class="btn-send"></button>    
-           
+            <button class="btn-send"></button>           
+            </div>
 
         </aside>
 
-        <aside class="modal-feedback">
+        <aside class="modal-feedback modal-feedback-hidden">
             
+            <div class="modal-ghost btn-cls"></div>
+            <div class="modal-content">
             <button class="btn-cls round-icon round-icon_close" type="button"></button>
             <div class="modal-title">
                 <span class="highlight"></span>
@@ -299,12 +302,12 @@
             <span>Нажимая “отправить”, вы даете согласие на<a class="lnk-in-text"> обработку персональных данных</a>
                 и соглашаетесь c нашей <a class="lnk-in-text" href="">политикой конфиденциальности<a></span>
             <button class="btn-send"></button>    
-           
+            </div>
 
         </aside>
 
         
     
     </body>
-<script  src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </html>

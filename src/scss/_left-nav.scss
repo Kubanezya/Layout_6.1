@@ -1,8 +1,18 @@
 .left-nav{
-  display: none;
-  grid-area: left-nav
+  
+  background-color: $bgClrModal;
+  grid-area: left-nav;
+  width: 100%;
+  z-index: 2;
+  position: fixed;
+  left: 0;
+  top: 0;
+
 
 } 
+
+
+
 
 @media (min-width: $screen-lg) {
 .left-nav{
@@ -25,8 +35,7 @@
   }
 
   .round-icon_close{
-    //background-image: url(../ic/close.png);  
-    display: none; 
+    background-image: url(../ic/close.png); 
   }
 
   .nav-list-side{ 

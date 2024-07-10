@@ -12,15 +12,19 @@
     flex-direction: column;
     gap:10px;
     padding: 16px;
+    
+    
   }
   
-  .info__text{ 
-      max-height: 22vw;
-      height: auto; 
+  .information__item_text{ 
+      
+      height: 150px;     
       overflow: hidden;
       line-height: 18px;
       letter-spacing: 0.2px;
       font-size: 14px;
+      
+      
   }
 
   .btn-more {
@@ -36,6 +40,7 @@
     height: auto; 
   }
 }
+
 @media (min-width: $screen-md){
   .information{
     flex-wrap: nowrap;
@@ -47,12 +52,12 @@
       padding: 0;  
     } 
 
-    .info__text{   
-      max-height: 22vw;
-      overflow: hidden;
+    .information__item_text{   
+            
       font-size: 14px;
       line-height: 20px;
       letter-spacing: 0.2px;
+      
     }
   }
 }
