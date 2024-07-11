@@ -313,7 +313,7 @@ body {
 
 .show-more {
   display: flex;
-  padding: 20px;
+  padding: 16px;
   padding-left: 15px;
   background-color: #F8F8F8; }
 
@@ -425,16 +425,11 @@ body {
   display: none;
   background-color: #FFFFFF;
   grid-area: left-nav;
-  width: 100%;
-  max-width: 767px;
+  width: 320px;
   z-index: 2;
   position: fixed;
   left: 0;
   top: 0; }
-
-@media (min-width: 768px) {
-  .left-nav {
-    display: none; } }
 
 @media (min-width: 1440px) {
   .left-nav {
@@ -526,7 +521,9 @@ body {
 .service-brand {
   display: flex;
   flex-direction: column;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 210px;
+  max-width: 767px; }
   .service-brand .service-title {
     display: flex;
     align-items: center;
@@ -544,33 +541,56 @@ body {
   .service-brand .service-nav {
     padding: 32px 20px;
     padding-right: 0;
-    overflow: hidden;
-    width: 100%; }
+    height: 80px;
+    width: 88vw; }
   .service-brand .swiper-slide {
     display: block;
     width: 240px;
     height: 72px; }
   .service-brand .swiper-brand {
-    height: 210px;
+    width: 98%;
     padding-bottom: 0; }
+  .service-brand .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px; }
+  .service-brand .swiper-pagination {
+    position: relative; }
 
 @media (min-width: 768px) {
-  .service-brand .service-nav {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    flex-wrap: wrap; } }
+  .service-brand {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    height: 300px; }
+    .service-brand .service-nav {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 200px; } }
 
 .service-category {
   display: flex;
   flex-direction: column;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 100%; }
   .service-category .swiper-slide {
     display: block;
     width: 240px;
     height: 160px; }
   .service-category .swiper-category {
-    height: 210px; }
+    height: 300px; }
+  .service-category .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px; }
+  .service-category .swiper-pagination {
+    position: relative;
+    top: 84px; }
+  .service-category .service-nav {
+    padding: 32px 20px;
+    padding-right: 0;
+    height: 80px;
+    width: 88vw; }
 
 .service-title {
   display: flex;
@@ -588,85 +608,96 @@ body {
   letter-spacing: -0.2px;
   color: #7E7E82; }
 
-.service-nav {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  flex-wrap: wrap;
-  padding: 32px 20px;
-  padding-right: 0; }
+@media (min-width: 768px) {
+  .service-category {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    height: 300px; }
+    .service-category .service-nav {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 200px; } }
 
-.service-price p {
-  display: block;
-  padding-left: 20px; }
+.service-price {
+  overflow: hidden; }
+  .service-price p {
+    display: block;
+    padding-left: 20px; }
+  .service-price a {
+    padding: 20px;
+    display: inline-block;
+    padding-right: 24px;
+    padding-left: 15px;
+    font-weight: 600;
+    background-image: url(./static/more.png);
+    background-repeat: no-repeat;
+    background-position: right; }
+  .service-price .price-items {
+    width: 260px;
+    height: 200px;
+    display: grid;
+    padding: 16px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "serv-cat serv-cat serv-cat" "serv-cat-item serv-cat-item serv-cat-item" "price price price" "price-item price-item price-item"  "time price-lnk price-lnk" "time-item price-lnk price-lnk"; }
+  .service-price .price-list {
+    font-size: 14px;
+    padding: 20px;
+    padding-left: 0;
+    width: 86vw;
+    border-radius: 6px;
+    height: 240px; }
+  .service-price .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px; }
+  .service-price .swiper-pagination {
+    position: relative; }
 
-.service-price a {
-  padding: 20px;
-  display: inline-block;
-  padding-right: 24px;
-  padding-left: 15px;
-  font-weight: 600;
-  background-image: url(./static/more.png);
-  background-repeat: no-repeat;
-  background-position: right; }
-
-.service-price .price-items {
-  width: 260px;
-  height: 200px;
-  display: grid;
-  padding: 16px;
-  background-color: #FFFFFF;
-  border-radius: 6px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "serv-cat serv-cat serv-cat" "serv-cat-item serv-cat-item serv-cat-item" "price price price" "price-item price-item price-item"  "time price-lnk price-lnk" "time-item price-lnk price-lnk"; }
-
-.service-price .price-list {
-  font-size: 14px;
-  padding: 20px;
-  width: 100%;
-  border-radius: 6px; }
-
-.service-price .price-desc {
+.price-desc {
   display: none; }
 
-.service-price .serv-cat {
+.serv-cat {
   grid-area: serv-cat;
   color: #7E7E82; }
 
-.service-price .price {
+.price {
   grid-area: price;
   color: #7E7E82; }
 
-.service-price .time {
+.time {
   grid-area: time;
   color: #7E7E82; }
 
-.service-price .serv-cat-item {
+.serv-cat-item {
   grid-area: serv-cat-item;
   align-self: center; }
 
-.service-price .price-item {
+.price-item {
   grid-area: price-item;
   align-self: center; }
 
-.service-price .time-item {
+.time-item {
   grid-area: time-item;
   align-self: center;
   white-space: nowrap; }
 
-.service-price .price-lnk {
+.price-lnk {
   grid-area: price-lnk;
   align-self: self-end;
   justify-self: end;
   height: 32px; }
-  .service-price .price-lnk a {
+  .price-lnk a {
     padding: 0;
     background-image: url(./static/order.png);
     width: 120px;
     height: 32px; }
 
-.service-price .price-lnk:hover, .service-price .price-lnk:focus {
+.price-lnk:hover, .price-lnk:focus {
   transform: scale(1.1);
   transition: transform 600ms; }
 
@@ -678,6 +709,13 @@ body {
     grid-template-columns: 3fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "serv-cat price time"; }
+  .service-price .price-list {
+    font-size: 14px;
+    padding: 20px;
+    padding-left: 0;
+    width: 100%;
+    border-radius: 6px;
+    height: 240px; }
   .service-price .price-items {
     width: auto;
     height: auto;
@@ -688,6 +726,15 @@ body {
     grid-template-areas: "serv-cat-item price-item time-item price-lnk "; }
     .service-price .price-items .serv-cat, .service-price .price-items .price, .service-price .price-items .time {
       display: none; }
+  .service-price .price-items:not(:last-child)::before {
+    content: "";
+    z-index: 1;
+    position: relative;
+    width: 200%;
+    height: 1px;
+    top: 16px;
+    left: 0px;
+    border-bottom: 1px solid #eaeaea; }
   .service-price .serv-cat {
     grid-area: serv-cat; }
   .service-price .price {
