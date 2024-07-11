@@ -542,10 +542,6 @@ body {
     letter-spacing: -0.2px;
     color: #7E7E82; }
   .service-brand .service-nav {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    flex-wrap: wrap;
     padding: 32px 20px;
     padding-right: 0;
     overflow: hidden;
@@ -560,6 +556,9 @@ body {
 
 @media (min-width: 768px) {
   .service-brand .service-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
     flex-wrap: wrap; } }
 
 .service-category {
@@ -718,7 +717,7 @@ body {
     font-size: 14px; }
   .information .main_logo {
     border-radius: 5px;
-    max-width: 100%;
+    max-width: 96%;
     height: auto; }
 
 @media (min-width: 768px) {
