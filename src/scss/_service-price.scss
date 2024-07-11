@@ -1,6 +1,6 @@
-.service-price{
- 
-
+.service-price {
+  
+  overflow: hidden;
   p {
     display: block;    
     padding-left: 20px;
@@ -36,11 +36,25 @@
   .price-list{
     font-size: 14px;
     padding: 20px;
-    width: 100%;
+    padding-left: 0;
+    width: 86vw;
     border-radius: 6px;
+    height: 240px;
+    
 
   }
 
+  .swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;    
+    
+  }
+  
+  .swiper-pagination{
+    position: relative;
+    
+  }
+}
 
 .price-desc{
     display: none;
@@ -96,6 +110,7 @@
 
 
 @media (min-width: $screen-md) {
+  .service-price {
 
  .price-desc{
     width: auto;
@@ -105,7 +120,19 @@
     grid-template-rows: 1fr;
     grid-template-areas: "serv-cat price time";                        
                         
-}
+  }
+
+  .price-list{
+    
+    font-size: 14px;
+    padding: 20px;
+    padding-left: 0;
+    width: 100%;
+    border-radius: 6px;
+    height: 240px;
+    
+
+  }
 
 
 .price-items{
@@ -120,6 +147,17 @@
                         
     .serv-cat,.price, .time {
       display: none;}
+} 
+  
+.price-items:not(:last-child)::before {
+  content: "";
+  z-index: 1;
+  position: relative;
+  width:200%;
+  height: 1px;
+  top: 16px;
+  left: 0px;
+  border-bottom: 1px solid rgba(234, 234, 234, 1); 
 }
 
 

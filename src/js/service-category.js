@@ -14,3 +14,18 @@ btnMore.onclick = function(){
         swpHght.style.height='210px';
     }
     };
+
+const swiperCategory = document.querySelector('.swiper-category');
+if (window.innerWidth < 768) {  
+    mySwiper = new Swiper(swiperCategory, {
+        direction: 'horizontal',
+        slidesOffsetBefore: 16,     
+        loop: true,
+        spaceBetween: 16,
+        slidesPerView: 'auto',
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: ' true' ,
+        }
+    });
+}    

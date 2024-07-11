@@ -54,7 +54,5 @@
       "autoprefixer": {}
     }
   },
-  "dependencies": {
-    "swiper": "^11.1.4"
-  }
+  "dependencies": {}
 }

@@ -14,7 +14,20 @@ btnMore.onclick = function(){
         iconShow.style.transform='rotate(0deg)'
         swpHght.style.height='210px';
     }
-    };
+};
 
 
-    
+const swiperBrand = document.querySelector('.swiper-brand');
+if (window.innerWidth < 768) {  
+    mySwiper = new Swiper(swiperBrand, {
+        direction: 'horizontal',
+        slidesOffsetBefore: 16,     
+        loop: true,
+        spaceBetween: 16,
+        slidesPerView: 'auto',
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: ' true' ,
+        }
+    });
+}
