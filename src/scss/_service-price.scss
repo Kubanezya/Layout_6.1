@@ -44,6 +44,8 @@
 
   }
 
+ 
+
   .swiper-pagination-bullet{
     width: 12px;
     height: 12px;    
@@ -52,6 +54,7 @@
   
   .swiper-pagination{
     position: relative;
+    top: -40px;
     
   }
 }
@@ -122,15 +125,10 @@
                         
   }
 
-  .price-list{
-    
-    font-size: 14px;
-    padding: 20px;
-    padding-left: 0;
-    width: 100%;
-    border-radius: 6px;
-    height: 240px;
-    
+  .price-list{      
+    padding: 20px;    
+    width: 100%;    
+    height: 100%;    
 
   }
 

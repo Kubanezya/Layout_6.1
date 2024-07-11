@@ -168,6 +168,10 @@ button{
   background-color:unset;  
 }
 
+input[type="submit"]{
+  cursor:pointer;
+}
+  
 h3{
   font-size: 24px;
   line-height: 32px;

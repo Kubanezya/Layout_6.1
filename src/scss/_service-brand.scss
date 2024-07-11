@@ -13,7 +13,8 @@
     background-image: linear-gradient(to right, #F8F8F8, #FFFFFF);
     border-top: 1px solid #D9FFF5;
     height: 56px;
-    text-transform: uppercase;   
+    text-transform: uppercase; 
+    flex-shrink: 0;  
   }
   
   .service-title__item{
@@ -24,21 +25,35 @@
     letter-spacing: -0.2px;
     color: #7E7E82;     
   }
+   
+  .swiper-slide{
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;      
+    width: 240px;   
+    height: 72px;
+    border-radius: 6px;
+    background-color: $bgClrModal; 
+    border: 1px solid $border;
+    padding: 14px; 
     
+  }
   .service-nav{
     
-    padding: 32px 20px;
+    padding:  20px;
     padding-right: 0;     
     height: 80px;   
     width: 88vw;      
     }
-  
-  
-    .swiper-slide{
-      display: block;
-      width: 240px;   
-      height: 72px; 
+
+    .show-more{
+      display: none;
     }
+  
+  
+   
+
+    
     
     .swiper-brand{
       width: 98%;
@@ -55,6 +70,7 @@
     
     .swiper-pagination{
       position: relative;
+      top: -10px;
       
     }
 }
@@ -67,16 +83,36 @@
 
   .service-brand {
     max-width: fit-content;
-    height: 300px;
+    height: 100%;
+    
+
     .service-nav{   
     display: flex; 
     flex-direction: row; 
     gap: 24px;
     flex-wrap: wrap;    
     width: 100%; 
-    height: 200px;
-    
+    height: 100%;    
+    }
+
+    .swiper-brand{
+      height: 210px;
+    }
+
+    .show-more{
+      display: flex;
+    }
+  
+    .swiper-slide{
+      width: 224px;
     }
   }
+
+
 }
-  
+ 
+@media (min-width: $screen-lg) {
+  .swiper-slide{
+    width: 240px;
+  }
+}

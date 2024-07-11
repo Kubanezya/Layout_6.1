@@ -8,7 +8,42 @@
     display: block;
   }
 
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+  }
+
+  input {
+    min-height: 48px;
+    border-radius: 6px;
+    border: 1px solid #EAEAEA;
+  }
+
+  input[type="submit"] {
+    width: 136px;
+    height: 32px;   
+    background-color: $bgClrModal; 
+    background-image: url(../ic/send.png);
+    background-repeat: no-repeat;
+    background-position: top;    
+    align-self: end;
+    padding: 0;
+    border: unset;
+    overflow: hidden;
+  }
+
+  input::placeholder {
+    padding: 12px;
+  }
+  
+  .lnk-in-text:hover, .lnk-in-text:focus {
+    color: blue;
+    text-decoration: underline;
+  }
 }  
+
 
 .modal-feedback-hidden{
     display: none;
