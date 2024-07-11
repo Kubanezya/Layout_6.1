@@ -431,7 +431,7 @@ body {
   background-color: #FFFFFF;
   grid-area: left-nav;
   width: 320px;
-  z-index: 2;
+  z-index: 1;
   position: fixed;
   left: 0;
   top: 0; }
@@ -569,7 +569,8 @@ body {
     height: 12px; }
   .service-brand .swiper-pagination {
     position: relative;
-    top: -10px; }
+    top: -10px;
+    z-index: 0; }
 
 @media (min-width: 768px) {
   .service-brand {
@@ -616,7 +617,8 @@ body {
     height: 12px; }
   .service-category .swiper-pagination {
     position: relative;
-    top: 80px; }
+    top: 80px;
+    z-index: 0; }
   .service-category .service-nav {
     padding: 20px;
     padding-right: 0;
@@ -648,7 +650,8 @@ body {
   height: 40px;
   border-radius: 100%;
   border: 2px solid #FF3E79;
-  align-self: end; }
+  align-self: end;
+  z-index: -1; }
   .btn-go span {
     display: block;
     width: 8px;
@@ -721,7 +724,8 @@ body {
     height: 12px; }
   .service-price .swiper-pagination {
     position: relative;
-    top: -40px; }
+    top: -40px;
+    z-index: 0; }
 
 .price-desc {
   display: none; }
@@ -844,6 +848,18 @@ body {
     .information .main_logo {
       max-width: 40vw; } }
 
+.modal-call {
+  grid-area: modal-call;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 320px;
+  height: 100%;
+  background-color: #FFFFFF;
+  z-index: 1; }
+  .modal-call .round-icon_close {
+    display: block; }
+
 .modal-content {
   display: flex;
   padding: 16px;
@@ -895,17 +911,6 @@ body {
 .lnk-in-text {
   color: #FF3E79; }
 
-.modal-call {
-  grid-area: modal-call;
-  position: fixed;
-  right: 0px;
-  top: 0px;
-  width: 320px;
-  height: 100%;
-  background-color: #FFFFFF; }
-  .modal-call .round-icon_close {
-    display: block; }
-
 .modal-call-hidden {
   display: none; }
 
@@ -934,9 +939,13 @@ body {
 
 .modal-feedback {
   grid-area: modal-feedback;
+  position: absolute;
+  left: 0px;
+  top: 0px;
   width: 320px;
   height: 100%;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  z-index: 1; }
   .modal-feedback .round-icon_close {
     display: block; }
   .modal-feedback form {
@@ -975,7 +984,7 @@ body {
     position: fixed;
     right: 0px;
     top: 0px;
-    z-index: 2;
+    z-index: 1;
     background-color: #FFFFFF; }
     .modal-feedback .modal-content .btn-cls {
       position: fixed;
