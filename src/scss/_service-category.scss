@@ -30,6 +30,7 @@
   .swiper-pagination{
     position: relative;
     top: 80px;
+    z-index: 0; 
     
   }
 
@@ -73,7 +74,8 @@
   height: 40px;
   border-radius: 100%;      
   border: 2px solid $bgnBtn;
-  align-self: end;  
+  align-self: end; 
+  z-index: -1;
   span{
     display: block;
     width: 8px;
@@ -110,7 +112,7 @@
     .show-more{
       display: flex;  
     }
-    
+
     .swiper-slide{
       width: 240px;
     }

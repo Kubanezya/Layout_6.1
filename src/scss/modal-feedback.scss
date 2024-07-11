@@ -1,8 +1,12 @@
 .modal-feedback{
-  grid-area: modal-feedback; 
+  grid-area: modal-feedback;
+  position:absolute;
+  left: 0px;
+  top: 0px; 
   width: 320px;
   height: 100%; 
   background-color: $bgClrModal;
+  z-index: 1; 
 
   .round-icon_close{
     display: block;
@@ -57,8 +61,8 @@
     position:fixed;
     right: 0px;
     top: 0px;
-    z-index: 2;
-    background-color: #FFFFFF;
+    z-index: 1;
+    background-color: $bgClrModal;
 
     .modal-content{
       .btn-cls{
