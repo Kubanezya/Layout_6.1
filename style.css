@@ -409,7 +409,7 @@ body {
 .navigation {
   overflow: hidden;
   padding-left: 20px;
-  width: 100vw; }
+  width: 98vw; }
 
 .nav-list {
   display: flex;
