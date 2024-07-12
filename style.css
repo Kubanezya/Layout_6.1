@@ -230,7 +230,8 @@ body {
 .header {
   display: flex;
   padding: 18px;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background-color: #FFFFFF; }
 
 @media (min-width: 1440px) {
   .header {
@@ -409,7 +410,7 @@ body {
 .navigation {
   overflow: hidden;
   padding-left: 20px;
-  width: 98vw; }
+  width: 96vw; }
 
 .nav-list {
   display: flex;
