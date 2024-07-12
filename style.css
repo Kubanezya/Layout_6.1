@@ -534,7 +534,7 @@ body {
   gap: 10px; }
 
 .service-brand {
-  display: none;
+  display: flex;
   flex-direction: column;
   overflow: hidden;
   height: 210px;
@@ -568,7 +568,7 @@ body {
     padding: 20px;
     padding-right: 0;
     height: 80px;
-    width: 80vw;
+    width: 88vw;
     overflow: visible; }
   .service-brand .show-more {
     display: none; }
@@ -608,10 +608,10 @@ body {
     width: 240px; } }
 
 .service-category {
-  display: none;
+  display: flex;
   flex-direction: column;
   overflow: hidden;
-  width: 100%; }
+  width: 99vw; }
   .service-category .swiper-slide {
     display: flex;
     justify-content: space-between;
@@ -630,12 +630,13 @@ body {
   .service-category .swiper-pagination {
     position: relative;
     top: 80px;
-    z-index: 0; }
+    z-index: 0;
+    width: 88vw; }
   .service-category .service-nav {
     padding: 20px;
     padding-right: 0;
     height: 80px;
-    width: 88vw; }
+    width: 92vw; }
   .service-category .show-more {
     display: none; }
 
@@ -700,7 +701,6 @@ body {
     width: 240px; } }
 
 .service-price {
-  display: none;
   overflow: hidden; }
   .service-price p {
     display: block;
@@ -843,7 +843,8 @@ body {
   .information .main_logo {
     border-radius: 5px;
     max-width: 96%;
-    height: auto; }
+    height: auto;
+    padding: 0; }
 
 @media (min-width: 768px) {
   .information {
@@ -858,7 +859,8 @@ body {
       line-height: 20px;
       letter-spacing: 0.2px; }
     .information .main_logo {
-      max-width: 40vw; } }
+      max-width: 40vw;
+      padding: 20px; } }
 
 .modal-call {
   grid-area: modal-call;
