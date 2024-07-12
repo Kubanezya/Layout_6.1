@@ -1,0 +1,18 @@
+.navigation{
+  overflow: hidden;
+  padding-left: 20px; 
+  width: 96vw;
+}
+.nav-list{
+  display: flex;  
+  flex-wrap: no-wrap;
+  overflow: hidden;
+  
+}
+
+@media (min-width: $screen-lg) {
+
+  .nav-list{
+    flex-wrap: wrap;
+  }
+}

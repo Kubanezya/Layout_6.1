@@ -23,7 +23,7 @@ function mobileSliderCategory(){
   if (window.innerWidth < 768 && swiperCategory.dataset.mobile == 'false') {  
     myswiperCategory = new Swiper(swiperCategory, {
     direction: 'horizontal',
-    slidesOffsetBefore: 16, 
+    slidesOffsetBefore: 8, 
     
     loop: true,
     spaceBetween: 16,

@@ -1,9 +1,11 @@
 .show-more{
   display: flex;
-  padding:16px;
-  padding-left: 15px;
+  padding:8px;  
   background-color: $bgColor;
-  
+  border: 2px solid $bgColor; 
+  width: fit-content;
+  position: relative;
+  left: 20px; 
   
 }
 
@@ -26,17 +28,16 @@
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.2px;
-  font-weight: bold;
-  background-color:$bgColor; 
-  border: 2px solid $bgColor;
+  font-weight: bold;    
   border-radius: 3px;
   color: $text;  
    
   
 }
 
-.btn-more:hover,.btn-more:focus {
+.show-more:hover,.show-more:focus {
   color: #7E7E82;
+  background-color: $bgClrModal;
   background-image: unset;
   border: 2px solid $lnkclr;
   border-radius: 3px;

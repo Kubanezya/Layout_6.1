@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  width: 100%;
+  max-width: 98vw;
 
   .swiper-slide{
     display: flex;
@@ -14,7 +14,8 @@
     border-radius: 6px;
     background-color: white; 
     border: 1px solid $border;
-    padding: 14px;   
+    padding: 14px;  
+   
   }
 
   .swiper-category{
@@ -30,7 +31,8 @@
   .swiper-pagination{
     position: relative;
     top: 80px;
-    z-index: 0; 
+    z-index: 0;
+   
     
   }
 
@@ -39,7 +41,8 @@
     padding: 20px;
     padding-right: 0;     
     height: 80px;   
-    width: 88vw;  
+    width: 92vw;
+    overflow: visible;  
   }
 
   .show-more{
@@ -74,8 +77,8 @@
   height: 40px;
   border-radius: 100%;      
   border: 2px solid $bgnBtn;
-  align-self: end; 
-  z-index: -1;
+  align-self: end;   
+  
   span{
     display: block;
     width: 8px;
@@ -96,13 +99,15 @@
   .service-category {
     max-width: fit-content;
     height: 100%;
+    padding-bottom: 10px;
     .service-nav{   
     display: flex; 
     flex-direction: row; 
     gap: 24px;
     flex-wrap: wrap;    
     width: 100%; 
-    height: 100%;    
+    height: 100%; 
+    overflow: hidden;   
     }
 
     .swiper-category{
@@ -115,6 +120,7 @@
 
     .swiper-slide{
       width: 240px;
+      
     }
   }
 }

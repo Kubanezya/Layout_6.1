@@ -1,6 +1,7 @@
 .service-price {
   
   overflow: hidden;
+  max-width: 98vw;
   p {
     display: block;    
     padding-left: 20px;
@@ -129,13 +130,13 @@
   .price-list{      
     padding: 20px;    
     width: 100%;    
-    height: 100%;    
+    height: 100%;      
 
   }
 
 
 .price-items{
-    width: auto;    
+    width: 100%;    
     height: auto;  
     display: grid;
     align-content: center;
