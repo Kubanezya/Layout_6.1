@@ -680,15 +680,6 @@ body {
     top: -10px;
     z-index: 0; }
 
-.shadow {
-  display: block;
-  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
-  width: 2px;
-  height: 81px;
-  background-repeat: no-repeat;
-  background-position: right top;
-  z-index: 20; }
-
 @media (min-width: 768px) {
   .service-brand {
     max-width: -moz-fit-content;
@@ -773,7 +764,6 @@ body {
     width: 240px; } }
 
 .service-price {
-  display: none;
   overflow: hidden;
   max-width: 98vw; }
   .service-price p {
