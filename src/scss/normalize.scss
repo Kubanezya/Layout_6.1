@@ -162,15 +162,67 @@ a:hover, a:focus {
     color: #7E7E82;
 }
 
+.lnk-in-text{
+  color: $bgnBtn;
+}
+
+.lnk-in-text:hover, .lnk-in-text:focus {
+  color: blue;
+  text-decoration: underline;
+}
+
+
+.link-btn  {
+  display: block;
+  padding: 10px 20px;  
+  color:#1B1C21;
+  white-space: nowrap;
+  font-size: 16px;
+  letter-spacing: -0.2px; 
+  line-height: 24px;
+}   
+
+.link-btn:hover, .link-btn:focus {
+  color: #7E7E82;
+  background-image: url(../ic/highlight.png); 
+  background-repeat: no-repeat; 
+  background-position: center left; 
+}
+
 button{
   cursor:pointer;
   border: 0;
   background-color:unset;  
 }
 
+input {
+  min-height: 48px;
+  border-radius: 6px;
+  border: 1px solid #EAEAEA;
+}
+
+input[type="submit"] {
+  width: 136px;
+  height: 32px;   
+  background-color: $bgClrModal;  
+  background-repeat: no-repeat;
+  background-position: top;    
+  align-self: end;
+  padding: 0;
+  border: unset;
+  overflow: hidden;
+
+}
+
+input::placeholder {
+  padding: 12px;
+}
+
 input[type="submit"]{
   cursor:pointer;
 }
+
+
   
 h3{
   font-size: 24px;

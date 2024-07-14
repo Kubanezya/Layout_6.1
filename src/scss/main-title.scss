@@ -1,0 +1,67 @@
+.main-title{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-title__left{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.highlight {
+  display: block;
+  width: 3px;
+  height: 40px;
+  background-image: url(../ic/highlight.png);
+  background-repeat: no-repeat ;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;  
+}  
+
+.main-title__title{
+  padding:15px;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  font-weight: 600;
+}
+
+.main-title__right{
+  display: none;
+  @media (min-width: $screen-lg){
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.main-title__right__btn {
+  display: inline-block;
+  margin-right: 20px;
+  background-color: $bgColor;
+  font-weight: 400;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-left: auto;
+  border:none;  
+  border-radius: 6px;
+  text-align: left;
+  height: 40px;
+  width: 172px;
+  padding: 0;
+  padding-left: 5px;
+}  
+
+.main-title__right__btn:hover, .main-title__right__btn:focus {
+  box-shadow: 0px 0px 1px 2px $lnkclr;
+  transition: 200ms;  
+}
+
+.main-title__right__btn_repair {
+  background-image: url(../ic/repair.png);
+}
+
+.main-title__right__btncheckstatus {
+  background-image: url(../ic/checkstatus.png);
+}

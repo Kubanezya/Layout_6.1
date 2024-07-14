@@ -9,24 +9,18 @@
   font-size: 14px;
   line-height: 16px;
   color:#7E7E82 ;
-  text-align: center;  
-}
-
-@media (min-width: $screen-md){
-  
-  .footer{
+  text-align: center;
+  @media (min-width: $screen-md) {
     flex-direction: row;
-
-  .copyright{
-    text-align: left;
-  }
-
-  .offer{
-    text-align: right;
-  }
-
-  p{
-    width: 30%;
-  }
+    .copyright{
+      text-align: left;
+    }
+    .offer{
+      text-align: right;
+    }
+    p{
+      width: 30%;
+    }
+ }
 }
-}
+

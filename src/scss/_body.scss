@@ -1,7 +1,7 @@
 body {
   display: grid;
   grid-template-columns: auto-fit auto-fit;
-  grid-template-rows: 2fr  1fr 1fr;
+  grid-template-rows: 3fr  1fr 1fr;
   grid-template-areas:  "main left-nav"
                         "main modal-call"
                         "main modal-feedback";
@@ -13,23 +13,28 @@ body {
   line-height: 24px;
   letter-spacing: -0.2px;
   background-color: white;
-  color: $text;
+  color: $text; 
+  overflow: visible; 
 }
 
 .main{
   grid-area: main;
+  overflow: hidden;
   background-color: $bgColor;
+}
+
+.hidden{
+  overflow: hidden;
 }
 
 
 
 @media (min-width: $screen-lg) {
   body{
-  grid-template-areas:  "left-nav  main"
-                        "modal-call main"
-                        "modal-feedback main";
-  
-                     
+    overflow: visible; 
+    grid-template-areas:  "left-nav  main"
+                          "modal-call main"
+                          "modal-feedback main";                      
   }
     
 }
