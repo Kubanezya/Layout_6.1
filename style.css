@@ -765,7 +765,8 @@ body {
 
 .service-price {
   overflow: hidden;
-  max-width: 98vw; }
+  max-width: 98vw;
+  display: none; }
   .service-price p {
     display: block;
     padding-left: 20px; }
