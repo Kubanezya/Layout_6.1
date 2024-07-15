@@ -27,7 +27,8 @@ $bgnBtn: #FF3E79;
 
 @import 'src/scss/_left-nav.scss';
 
-@import 'src/scss/_service-brand.scss', 'src/scss/_service-category.scss','src/scss/_service-price.scss';
+@import 'src/scss/_service-brand.scss', 'src/scss/_service-category.scss';
+@import 'src/scss/_service-price.scss';
 
 @import 'src/scss/information.scss';
 
