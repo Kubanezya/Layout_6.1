@@ -5,12 +5,12 @@ let iconShow = blockName.querySelector('.icon-show');
 let swpHght = blockName.querySelector('.swiper-brand');
 btnMore.onclick = function(){
      if (btnMore.textContent == 'Показать все'){
-        btnMore.textContent='Скрыть';
+        btnMore.textContent='<span class="icon-show"> Скрыть';
         iconShow.style.transform='rotate(180deg)';
         swpHght.style.height='auto';
     }
      else{
-        btnMore.textContent='Показать все';
+        btnMore.textContent='<span class="icon-show">Показать все';
         iconShow.style.transform='rotate(0deg)'
         swpHght.style.height='210px';
     }

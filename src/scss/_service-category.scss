@@ -5,18 +5,7 @@
   overflow: hidden;
   max-width: 98vw;
 
-  .swiper-slide{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 240px;   
-    height: 160px;
-    border-radius: 6px;
-    background-color: white; 
-    border: 1px solid $border;
-    padding: 14px;  
-   
-  }
+  
 
   .swiper-category{
     height: 300px;
@@ -82,4 +71,16 @@
 }
 
 
+.slide-category{
   
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 240px;   
+    height: 160px;
+    border-radius: 6px;
+    background-color: white; 
+    border: 1px solid $border;
+    padding: 14px;  
+   
+}  

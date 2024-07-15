@@ -71,16 +71,6 @@
   border: 2px solid $lnkclr;    
 }
 
-.show-more{
-  display: flex;
-  padding:8px;  
-  background-color: $bgColor;
-  border: 2px solid $bgColor; 
-  width: fit-content;
-  position: relative;
-  left: 20px; 
-  
-}
 
 .icon-show{
   background-image: url("../ic/expand.png");
@@ -93,25 +83,62 @@
 
 
 .btn-more{
-  display: inline-block;
+  display: flex;
+  width: fit-content;
   height: 24px;
   vertical-align: middle;
-  padding: 0;
+  padding: 0;  
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.2px;
-  font-weight: bold;    
+  font-weight: bold;  
+  border: 2px solid $bgColor;  
   border-radius: 3px;
   color: $text;  
-   
+  padding-right:  8px;
+  
+
   
 }
 
-.show-more:hover,.show-more:focus {
+.btn-more:hover,.btn-more:focus {
   color: #7E7E82;
   background-color: $bgClrModal;
   background-image: unset;
   border: 2px solid $lnkclr;
   border-radius: 3px;
+}
+
+.btn-oval{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  height: 32px;
+  padding-left: 14px;
+  padding-right: 16px;
+  gap:20px;
+  background-color: $bgnBtn;
+  border-radius: 16px;
+  vertical-align: middle;
+  text-align: left;
+  color: $bgClrModal;
+  align-self: end;
+  transition: 600ms;    
+  span{
+    display: block;
+    width: 8px;
+    height: 8px;
+    rotate: 45deg;
+    border: 2px solid $bgClrModal;
+    border-left: 0;
+    border-bottom: 0;
+    border-radius: 0;    
+  }
+
+}
+
+.btn-oval:hover, .btn-oval:focus {
+  transform:scale(1.1);
 }

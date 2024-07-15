@@ -24,19 +24,12 @@
     letter-spacing: -0.2px;
     color: #7E7E82;     
   }
-   
-  .swiper-slide{
-    display: flex;
-    justify-content: space-between;  
-    align-items: center;      
-    width: 240px;   
-    height: 72px;
-    border-radius: 6px;
-    background-color: $bgClrModal; 
-    border: 1px solid $border;
-    padding: 14px; 
+       
     
-  }
+  
+
+  
+
   .service-nav{
     
     padding:  20px;
@@ -105,4 +98,53 @@
       } 
     }
   }
+}
+
+.slide-brand{
+  display: flex;
+  justify-content: flex-end;  
+  align-items: center;      
+  width: 240px;   
+  height: 72px;
+  border-radius: 6px;
+  background-color: $bgClrModal; 
+  border: 1px solid $border;
+  padding: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x:14px;
+  
+  
+}
+
+.slide-brand_lenovo{
+  background-image: url(../ic/lenovo.png);  
+}
+
+.slide-brand_sumsung{
+  background-image: url(../ic/samsung.png);  
+}
+
+.slide-brand_apple{
+  background-image: url(../ic/apple.png);   
+}
+
+.slide-brand_viewsonic{
+  background-image: url(../ic/viewsonic.png);  
+}
+
+.slide-brand_bosh{
+  background-image: url(../ic/bosh.png);  
+}
+
+.slide-brand_hp{
+  background-image: url(../ic/hp.png);  
+}
+
+.slide-brand_acer{
+  background-image: url(../ic/acer.png);  
+}
+
+.slide-brand_sony{
+  background-image: url(../ic/sony.png);  
 }

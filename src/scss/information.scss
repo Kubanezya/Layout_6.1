@@ -1,62 +1,51 @@
 .information{
-   
-    display:flex;
-    flex-wrap: wrap;
-    margin: 0px;
-    padding-bottom: 0;
-    background-color: $bgColor;
-    overflow: hidden;
-
-  .information__item{
-    display: flex;
-    flex-direction: column;
-    gap:10px;
-    padding: 16px;
-    .show-more{
-      position: unset;
-    }    
-    
-    
-  }
-  
-  .information__item_text{       
-    height: 150px;     
-    overflow: hidden;
-    line-height: 18px;
-    letter-spacing: 0.2px;
-    font-size: 14px;        
-  }
-
-  .main_logo{
-    border-radius: 5px;
-    max-width:96%;
-    height: auto;
-    padding: 0;    
-  }
-}
-
-@media (min-width: $screen-md){
-  .information{
+  display:flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding-bottom: 0;
+  background-color: $bgColor;
+  overflow: hidden;
+  @media (min-width: $screen-md){
     flex-wrap: nowrap;
     gap:42px; 
     padding: 20px;
-
-    .information__item{
-      margin: 0;
-      padding: 0;  
-    } 
-
-    .information__item_text{   
-            
-      font-size: 14px;
-      line-height: 20px;
-      letter-spacing: 0.2px;
-      
-    }
-
-    .main_logo{      
-      max-width:40vw;
-            
-    }
   }
+}
+
+.information__item{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  padding: 16px;
+  @media (min-width: $screen-md){
+    margin: 0;
+    padding: 0;
+  }
+
+  .show-more{
+    position: unset;
+  }    
+}
+
+.information__item_text{       
+  height: 150px;     
+  overflow: hidden;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  font-size: 14px;  
+  @media (min-width: $screen-md){
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }      
+} 
+
+.main_logo{
+  border-radius: 5px;
+  max-width:96%;
+  height: auto;
+  padding: 0;
+  @media (min-width: $screen-md){
+    max-width:40vw;
+  }    
 }
