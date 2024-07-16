@@ -272,14 +272,6 @@ h3 {
   background-image: unset;
   border: 2px solid #B8FFEC; }
 
-.icon-show {
-  background-image: url(./static/expand.png);
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 24px;
-  transform: rotate(0deg);
-  transition-duration: 1200ms; }
-
 .btn-more {
   display: flex;
   width: -moz-fit-content;
@@ -303,6 +295,14 @@ h3 {
   background-image: unset;
   border: 2px solid #B8FFEC;
   border-radius: 3px; }
+
+.btn-more_icon {
+  background-image: url(./static/expand.png);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  transform: rotate(0deg);
+  transition-duration: 1200ms; }
 
 .btn-oval {
   display: flex;
@@ -534,25 +534,36 @@ body {
   display: flex;
   overflow: hidden;
   padding-left: 20px;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 .nav-list {
   display: flex;
   flex-wrap: no-wrap;
   overflow: hidden;
   overflow-x: scroll;
-  width: 100vw; }
+  width: 100vw;
+  position: relative; }
 
-.nav-list::before {
+.navigation::before {
+  content: '';
+  background: linear-gradient(90deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+  width: 24px;
+  height: 48px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 20px;
+  z-index: 2; }
+
+.navigation::after {
   content: '';
   background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
   width: 24px;
-  height: 81px;
+  height: 48px;
   background-repeat: no-repeat;
-  background-position: right top;
   position: absolute;
   right: 0;
-  z-index: 20; }
+  z-index: 2; }
 
 @media (min-width: 1440px) {
   .nav-list {
@@ -645,7 +656,8 @@ body {
   flex-direction: column;
   overflow: hidden;
   height: 210px;
-  max-width: 767px; }
+  max-width: 767px;
+  position: relative; }
   .service-brand .service-title {
     display: flex;
     align-items: center;
@@ -661,17 +673,38 @@ body {
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #7E7E82; }
+  .service-brand .btn-more {
+    display: none;
+    margin-left: 20px; }
+  .service-brand .swiper-brand {
+    width: 94%;
+    padding-bottom: 0; }
+  .service-brand .swiper-brand::before {
+    content: '';
+    background: linear-gradient(90deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    width: 24px;
+    height: 72px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 74px;
+    left: 0;
+    z-index: 2; }
+  .service-brand .swiper-brand::after {
+    content: '';
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    width: 24px;
+    height: 72px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 74px;
+    right: 0;
+    z-index: 2; }
   .service-brand .service-nav {
     padding: 20px;
     padding-right: 0;
     height: 80px;
     width: 88vw;
     overflow: visible; }
-  .service-brand .show-more {
-    display: none; }
-  .service-brand .swiper-brand {
-    width: 94%;
-    padding-bottom: 0; }
   .service-brand .swiper-pagination-bullet {
     width: 12px;
     height: 12px; }
@@ -679,6 +712,8 @@ body {
     position: relative;
     top: -10px;
     z-index: 0; }
+  .service-brand .swiper-slide {
+    width: 240px; }
   @media (min-width: 768px) {
     .service-brand {
       max-width: -moz-fit-content;
@@ -695,7 +730,7 @@ body {
         overflow: hidden; }
       .service-brand .swiper-brand {
         height: 210px; }
-      .service-brand .show-more {
+      .service-brand .btn-more {
         display: flex; }
       .service-brand .swiper-slide {
         width: 224px; } }
@@ -745,7 +780,8 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  max-width: 98vw; }
+  max-width: 98vw;
+  position: relative; }
   .service-category .swiper-category {
     height: 300px; }
   .service-category .swiper-pagination-bullet {
@@ -755,14 +791,37 @@ body {
     position: relative;
     top: 80px;
     z-index: 0; }
+  .service-category .swiper-slide {
+    width: 240px; }
+  .service-category .swiper-category::before {
+    content: '';
+    background: linear-gradient(90deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    width: 24px;
+    height: 210px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 74px;
+    left: 0;
+    z-index: 2; }
+  .service-category .swiper-category::after {
+    content: '';
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    width: 24px;
+    height: 210px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 74px;
+    right: 0;
+    z-index: 2; }
   .service-category .service-nav {
     padding: 20px;
     padding-right: 0;
     height: 80px;
     width: 92vw;
     overflow: visible; }
-  .service-category .show-more {
-    display: none; }
+  .service-category .btn-more {
+    display: none;
+    margin-left: 20px; }
   @media (min-width: 768px) {
     .service-category {
       max-width: -moz-fit-content;
@@ -779,7 +838,7 @@ body {
         overflow: hidden; }
       .service-category .swiper-category {
         height: 200px; }
-      .service-category .show-more {
+      .service-category .btn-more {
         display: flex; }
       .service-category .swiper-slide {
         width: 240px; } }
@@ -800,7 +859,8 @@ body {
 
 .service-price {
   overflow: hidden;
-  max-width: 98vw; }
+  max-width: 98vw;
+  position: relative; }
   .service-price p {
     display: block;
     padding-left: 20px; }
@@ -837,6 +897,26 @@ body {
     position: relative;
     top: -40px;
     z-index: 0; }
+  .service-price .swiper-price::before {
+    content: '';
+    background: linear-gradient(90deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    width: 24px;
+    height: 210px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 74px;
+    left: 0;
+    z-index: 2; }
+  .service-price .swiper-price::after {
+    content: '';
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    width: 24px;
+    height: 210px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 74px;
+    right: 0;
+    z-index: 2; }
 
 .price-desc {
   display: none; }
