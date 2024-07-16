@@ -71,17 +71,6 @@
   border: 2px solid $lnkclr;    
 }
 
-
-.icon-show{
-  background-image: url("../ic/expand.png");
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 24px;
-  transform: rotate(0deg);
-  transition-duration: 1200ms;
-}
-
-
 .btn-more{
   display: flex;
   width: fit-content;
@@ -96,8 +85,7 @@
   border: 2px solid $bgColor;  
   border-radius: 3px;
   color: $text;  
-  padding-right:  8px;
-  
+  padding-right:  8px; 
 
   
 }
@@ -109,6 +97,17 @@
   border: 2px solid $lnkclr;
   border-radius: 3px;
 }
+
+.btn-more_icon{
+  background-image: url("../ic/expand.png");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  transform: rotate(0deg);
+  transition-duration: 1200ms;
+}
+
+
 
 .btn-oval{
   display: flex;

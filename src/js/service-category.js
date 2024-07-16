@@ -1,16 +1,20 @@
 let blockName = document.querySelector('.service-category');
 let btnMore = blockName.querySelector('.btn-more');
-let iconShow = blockName.querySelector('.icon-show');
+let btnMoreText = blockName.querySelector('.btn-more_text');
+let btnMoreIcon = blockName.querySelector('.btn-more_icon');
 let swpHght = blockName.querySelector('.swiper-category');
+
 btnMore.onclick = function(){
-     if (btnMore.textContent == 'Показать все'){
-        btnMore.textContent='Скрыть';
-        iconShow.style.transform='rotate(180deg)';
+        console.log('click')
+     if (btnMoreText.textContent == 'Показать все'){
+        btnMoreText.textContent='Скрыть';        
+        btnMoreIcon.style.transform='rotate(180deg)';
         swpHght.style.height='auto';
+        
     }
      else{
-        btnMore.textContent='Показать все';
-        iconShow.style.transform='rotate(0deg)'
+        btnMoreText.textContent='Показать все';
+        btnMoreIcon.style.transform='rotate(0deg)'
         swpHght.style.height='200px';
     }
 };

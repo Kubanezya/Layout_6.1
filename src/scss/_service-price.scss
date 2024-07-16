@@ -1,7 +1,9 @@
 .service-price {
   
   overflow: hidden;
-  max-width: 98vw;  
+  max-width: 98vw;
+  position: relative;
+  
   p {
     display: block;    
     padding-left: 20px;
@@ -56,6 +58,34 @@
     z-index: 0; 
     
   }
+
+  .swiper-price::before{
+    content: '';
+    background: linear-gradient(90deg, $bgColor 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    width: 24px ;
+    height: 210px;
+    background-repeat: no-repeat; 
+    
+    position: absolute;  
+    top: 74px; 
+    left: 0;
+    z-index: 2;
+  }
+
+  .swiper-price::after{
+    content: '';
+    background: linear-gradient(270deg, $bgColor 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    width: 24px ;
+    height: 210px;
+    background-repeat: no-repeat; 
+      
+    position: absolute; 
+    top: 74px;
+    right: 0;
+    z-index: 2;
+  }
+
+
 }
 
 .price-desc{
@@ -119,6 +149,13 @@
 
   }
 
+  .swiper-price::before{
+    display: none;
+  } 
+  .swiper-price::after{
+    display: none;
+  }
+
 
 .price-items{
     width: 100%;    
@@ -131,7 +168,8 @@
                         "serv-cat-item price-item time-item price-lnk ";                        
                         
     .serv-cat,.price, .time {
-      display: none;}
+      display: none;
+    }
 } 
   
 .price-items:not(:last-child)::before {

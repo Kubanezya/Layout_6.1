@@ -1,18 +1,21 @@
 
 let blockName = document.querySelector('.information');
 let btnMore = blockName.querySelector('.btn-more');
-let iconShow = blockName.querySelector('.icon-show');
+let btnMoreText = blockName.querySelector('.btn-more_text');
+let btnMoreIcon = blockName.querySelector('.btn-more_icon');
 let swpHght = blockName.querySelector('.information__item_text');
 
 btnMore.onclick = function(){
-     if (btnMore.textContent == '<span class="icon-show">Читать далее'){
-        btnMore.textContent='Скрыть';        
-        iconShow.style.transform='rotate(180deg)';
+        console.log('click')
+     if (btnMoreText.textContent == 'Читать далее'){
+        btnMoreText.textContent='Скрыть';        
+        btnMoreIcon.style.transform='rotate(180deg)';
         swpHght.style.height='auto';
+        
     }
      else{
-        btnMore.textContent='<span class="icon-show">Читать далее';
-        iconShow.style.transform='rotate(0deg)'
+        btnMoreText.textContent='Читать далее';
+        btnMoreIcon.style.transform='rotate(0deg)'
         swpHght.style.height='150px';
     }
     };

@@ -4,7 +4,8 @@
   flex-direction: column;
   overflow: hidden;
   height: 210px;
-  max-width: 767px;  
+  max-width: 767px; 
+  position: relative; 
    
   .service-title{
     display: flex;
@@ -25,9 +26,42 @@
     color: #7E7E82;     
   }
        
-    
+  .btn-more{
+    display: none;
+    margin-left: 20px;
+  }  
   
+  .swiper-brand{
+    width: 94%;
+    padding-bottom: 0;  
+      
+  }
 
+  .swiper-brand::before{
+    content: '';
+    background: linear-gradient(90deg, $bgColor 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    width: 24px ;
+    height: 72px;
+    background-repeat: no-repeat; 
+    
+    position: absolute;  
+    top: 74px; 
+    left: 0;
+    z-index: 1;
+  }
+
+  .swiper-brand::after{
+    content: '';
+    background: linear-gradient(270deg, $bgColor 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    width: 24px ;
+    height: 72px;
+    background-repeat: no-repeat; 
+      
+    position: absolute; 
+    top: 74px;
+    right: 0;
+    z-index: 1;
+  }
   
 
   .service-nav{
@@ -37,35 +71,24 @@
     height: 80px;   
     width: 88vw;
     overflow: visible;      
-    }
-
-    .show-more{
-      display: none;
-    }
-  
-       
-    
-    .swiper-brand{
-      width: 94%;
-      padding-bottom: 0;   
-     
-     
-    }
-  
-    .swiper-pagination-bullet{
-      width: 12px;
-      height: 12px;
-         
+  }         
       
-    }
+  .swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;        
     
-    .swiper-pagination{
-      position: relative;
-      top: -10px;
-      z-index: 0; 
-      
-    }
+  }
+    
+  .swiper-pagination{
+    position: relative;
+    top: -10px;
+    z-index: 0; 
+    
+  }
 
+    .swiper-slide{
+      width: 240px;
+    }
 
   @media (min-width: $screen-md) {
   
@@ -87,7 +110,7 @@
       height: 210px;
     }
 
-    .show-more{
+    .btn-more{
       display: flex;
     }
 
@@ -96,6 +119,13 @@
       @media (min-width: $screen-lg) {
         width: 240px;
       } 
+    }
+
+    .swiper-brand::before{
+      display: none;
+    } 
+    .swiper-brand::after{
+      display: none;
     }
   }
 }
