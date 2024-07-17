@@ -5,10 +5,12 @@ let body =   document.querySelector('.body');
 
 let openModal = function(){
     if (blockName.classList.contains('modal-feedback-hidden')){
-        blockName.classList.remove('modal-feedback-hidden'); 
+        blockName.classList.remove('modal-feedback-hidden');
+        body.classList.add('hidden'); 
         }      
         else{
-        blockName.classList.add('modal-feedback-hidden');        
+        blockName.classList.add('modal-feedback-hidden');  
+        body.classList.remove('hidden');      
         }
     };  
     

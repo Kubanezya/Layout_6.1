@@ -6,9 +6,11 @@ let body =   document.querySelector('.body');
 
 btnOpn.onclick = function(){
     blockName.style.display = 'block';
-    if (window.innerWidth < 768){
+    body.classList.add('hidden');
+    /*if (window.innerWidth < 768){
         body.classList.add('hidden');
     };
+    */
 }
 
 btnCls.onclick = function() {

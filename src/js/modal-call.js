@@ -7,9 +7,11 @@ let body =   document.querySelector('.body');
 let openModal = function(){
     if (blockName.classList.contains('modal-call-hidden')){
         blockName.classList.remove('modal-call-hidden');
+        body.classList.add('hidden');
         }
         else{
-            blockName.classList.add('modal-call-hidden');             
+            blockName.classList.add('modal-call-hidden');
+            body.classList.remove('hidden');             
         };        
     }  
     
