@@ -807,7 +807,7 @@ body {
     position: absolute;
     top: 74px;
     left: 0;
-    z-index: 2; }
+    z-index: 1; }
   .service-category .swiper-category::after {
     content: '';
     background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
@@ -817,7 +817,7 @@ body {
     position: absolute;
     top: 74px;
     right: 0;
-    z-index: 2; }
+    z-index: 1; }
   .service-category .service-nav {
     padding: 20px;
     padding-right: 0;
@@ -916,7 +916,7 @@ body {
     position: absolute;
     top: 74px;
     left: 0;
-    z-index: 2; }
+    z-index: 1; }
   .service-price .swiper-price::after {
     content: '';
     background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
@@ -926,7 +926,7 @@ body {
     position: absolute;
     top: 74px;
     right: 0;
-    z-index: 2; }
+    z-index: 1; }
 
 .price-desc {
   display: none; }
